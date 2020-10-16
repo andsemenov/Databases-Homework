@@ -39,6 +39,6 @@ When you have finished all of the questions - open a pull request with your answ
 
     SELECT name FROM mentors WHERE years_in_Glasgow >5;
     SELECT name FROM mentors WHERE favourite_language='Javascript';
-    SELECT name FROM students WHERE graduated='yes';
+    SELECT name FROM students WHERE graduated=true;
     SELECT topic,date FROM classes WHERE date <'2020-06-01';
     SELECT student_id FROM activities INNER JOIN classes on activities.classes_id= classes.id WHERE topic='Javascript';

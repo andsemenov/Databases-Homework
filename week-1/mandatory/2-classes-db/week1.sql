@@ -17,7 +17,7 @@ CREATE TABLE mentors (
 CREATE TABLE students (
   id       SERIAL PRIMARY KEY,
   name     VARCHAR(120) NOT NULL,
-  graduated  VARCHAR(3) NOT NULL
+  graduated  boolean NOT NULL
 );
 
 CREATE TABLE classes (
@@ -41,16 +41,16 @@ INSERT INTO mentors (name, years_in_Glasgow, address, city, postcode, country,fa
 INSERT INTO mentors (name, years_in_Glasgow, address, city, postcode, country,favourite_language) VALUES ('Steven King',14,'19 Bed Street','Glasgow','G51 9AF','UK','CSS');
 
 
-INSERT INTO students (name, graduated) VALUES ('Nadia Sethuraman','yes');
-INSERT INTO students (name, graduated) VALUES ('Melinda Marsh','no');
-INSERT INTO students (name, graduated) VALUES ('Martín Sommer','yes');
-INSERT INTO students (name, graduated) VALUES ('Laurence Lebihan','yes');
-INSERT INTO students (name, graduated) VALUES ('Keith Stewart','no');
-INSERT INTO students (name, graduated) VALUES ('Aria Sethan','yes');
-INSERT INTO students (name, graduated) VALUES ('Beata Forsh','no');
-INSERT INTO students (name, graduated) VALUES ('Cinda Lommer','yes');
-INSERT INTO students (name, graduated) VALUES ('Diana Serhan','yes');
-INSERT INTO students (name, graduated) VALUES ('Ellton Smart','no');
+INSERT INTO students (name, graduated) VALUES ('Nadia Sethuraman',true);
+INSERT INTO students (name, graduated) VALUES ('Melinda Marsh',false);
+INSERT INTO students (name, graduated) VALUES ('Martín Sommer',true);
+INSERT INTO students (name, graduated) VALUES ('Laurence Lebihan',true);
+INSERT INTO students (name, graduated) VALUES ('Keith Stewart',false);
+INSERT INTO students (name, graduated) VALUES ('Aria Sethan',true);
+INSERT INTO students (name, graduated) VALUES ('Beata Forsh',false);
+INSERT INTO students (name, graduated) VALUES ('Cinda Lommer',true);
+INSERT INTO students (name, graduated) VALUES ('Diana Serhan',true);
+INSERT INTO students (name, graduated) VALUES ('Ellton Smart',false);
 
 
 INSERT INTO classes (topic, mentor_id, time, date) VALUES ('Javascript', 1, '10:00','2020-07-01');
